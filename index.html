@@ -1,47 +1,191 @@
 <html>
  <head>
- <title> Szpinek 2p</title>
+ <title> Szpinek 2P</title>
  <script language="JavaScript">
  function WinOpen() 
  {
 window.open("zadanie1.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+
  function WinOpen1() 
  {
 window.open("szpinek2.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+
  function WinOpen2() 
  {
 window.open("zadanie3.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+
  function WinOpen3() 
  {
 window.open("zadanie4.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+
  function WinOpen4() 
  {
 window.open("zadanie5(końcowo).html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+
+ function WinOpen5() 
+ {
+window.open("zadanie6.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen6() 
+ {
+window.open("zadanie7.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen7() 
+ {
+window.open("zadanie8.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen8() 
+ {
+window.open("zadanie9.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen9() 
+ {
+window.open("zadanie10.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen10() 
+ {
+window.open("zadanie11.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen11() 
+ {
+window.open("zadanie11_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen12() 
+ {
+window.open("zadanie13.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen13() 
+ {
+window.open("zadanie13_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen14() 
+ {
+window.open("zadanie14.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen15() 
+ {
+window.open("zadanie14_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen16() 
+ {
+window.open("zadanie15.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen17() 
+ {
+window.open("zadanie15_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen18() 
+ {
+window.open("zadanie16.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen19() 
+ {
+window.open("zadanie16_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+
+ function WinOpen20() 
+ {
+window.open("zadanie12.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
+ function WinOpen21() 
+ {
+window.open("zadanie12_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+
  </script>
  </head>
 <body>
     <style>
         #id1{
-            color: red;
+            color: rgb(255, 255, 255);
             font-size: 2 cm ;
             font-weight: bold;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         }
+
+        #main_div{
+            background-color: rgb(111, 190, 204);
+            width: 300px;
+            height:100%;
+            border-radius: 20px;
+
+        }
+
+        body{
+            background:linear-gradient(rgb(130, 202, 214),rgb(111, 190, 204));
+        }
+        input{
+            margin: 5px;
+            background-color: rgb(73, 141, 135);
+            color:rgb(255, 255, 255);
+            height:25px;
+            width:120px;
+            border:2px,black;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        input:hover{
+            margin: 5px;
+            background-color: rgb(47, 122, 116);
+            color:rgb(255, 255, 255);
+            height:25px;
+            width:120px;
+            border:2px,black; 
+            border-radius: 10px;
+            transform: scale(1.2);
+        }
+        
+       
+
     </style>
 
-    <h1 id="id1">Szkielet zaliczeniowy JS Filip Szpinek 2P:</h1>
+   <center><h1 id="id1">Szkielet zaliczeniowy JS Filip Szpinek 2P:</h1></center> 
  <form>
-    
- <input type="button" name="Zadanie 1" value="Zadanie 1" onclick="WinOpen(' ')">
- <input type="button" name="Zadanie 2" value="Zadanie 2" onclick="WinOpen1(' ')">
+    <center>
+        <div id="main_div">
+ <input type="button" name="Zadanie 1" value="Zadanie 1" onclick="WinOpen(' ')"> 
+ <input type="button" name="Zadanie 2" value="Zadanie 2" onclick="WinOpen1(' ')"><br>
  <input type="button" name="Zadanie 3" value="Zadanie 3" onclick="WinOpen2(' ')">
- <input type="button" name="Zadanie 4" value="Zadanie 4" onclick="WinOpen3(' ')">
+ <input type="button" name="Zadanie 4" value="Zadanie 4" onclick="WinOpen3(' ')"><br>
  <input type="button" name="Zadanie 5" value="Zadanie 5" onclick="WinOpen4(' ')">
+ <input type="button" name="Zadanie 6" value="Zadanie 6" onclick="WinOpen5(' ')"><br>
+ <input type="button" name="Zadanie 7" value="Zadanie 7" onclick="WinOpen6(' ')">
+ <input type="button" name="Zadanie 8" value="Zadanie 8" onclick="WinOpen7(' ')"><br>
+ <input type="button" name="Zadanie 9" value="Zadanie 9" onclick="WinOpen8(' ')">
+ <input type="button" name="Zadanie 10" value="Zadanie 10" onclick="WinOpen9(' ')"><br>
+ <input type="button" name="Zadanie 11" value="Zadanie 11" onclick="WinOpen10(' ')">
+ <input type="button" name="Zadanie 11_KOD" value="Zadanie 11_KOD" onclick="WinOpen11(' ')"><br>
+ <input type="button" name="Zadanie 12" value="Zadanie 12" onclick="WinOpen20(' ')">
+ <input type="button" name="Zadanie 12_KOD" value="Zadanie 12_KOD" onclick="WinOpen21(' ')">
+ <input type="button" name="Zadanie 13" value="Zadanie 13" onclick="WinOpen12(' ')">
+ <input type="button" name="Zadanie 13_KOD" value="Zadanie 13_KOD" onclick="WinOpen13(' ')"><br>
+ <input type="button" name="Zadanie 14" value="Zadanie 14" onclick="WinOpen14(' ')">
+ <input type="button" name="Zadanie 14_KOD" value="Zadanie 14_KOD" onclick="WinOpen15(' ')"><br>
+ <input type="button" name="Zadanie 15" value="Zadanie 15" onclick="WinOpen16(' ')">
+ <input type="button" name="Zadanie 15_KOD" value="Zadanie 15_KOD" onclick="WinOpen17(' ')"><br>
+ <input type="button" name="Zadanie 16" value="Zadanie 16" onclick="WinOpen18(' ')">
+ <input type="button" name="Zadanie 16_KOD" value="Zadanie 16_KOD" onclick="WinOpen19(' ')"><br>
+
+
+</div>
+</center>
+
+
 
  </form>
 </body>

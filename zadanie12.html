@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Zadanie 12</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:rgb(0, 0, 0);font-size:20px;">
+    
+ <script language="JavaScript">
+
+let Y = parseFloat(prompt("Podaj pierwszy dzień :")); 
+let V = parseFloat(prompt("Podaj pierwsza godzinę :")); 
+let X = parseFloat(prompt("Podaj drugi dzień :")); 
+let Z = parseFloat(prompt("Podaj drugą godzinę :")); 
+
+ 
+
+let dzienWsekundach = 24 * 60 * 60;
+let godzinaWsekundach = 60 * 60; 
+ 
+
+let poczatekWSekundach = (X - 1) * dzienWsekundach + Z * godzinaWsekundach;
+let koniecWSekundach = (Y - 1) * dzienWsekundach + V * godzinaWsekundach;
+ 
+let liczbaSekund = koniecWSekundach - poczatekWSekundach;
+
+
+
+document.write("Ilość sekund pomiędzy dniami: " + liczbaSekund);
+ </script>
+</div>
+</body>
