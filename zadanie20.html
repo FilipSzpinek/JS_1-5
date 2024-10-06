@@ -1,0 +1,102 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+ 
+  function bok_A() 
+   { 
+    let a= parseFloat(document.getElementById('dlugosc1').value); 
+    let b= parseFloat(document.getElementById('dlugosc2').value); //
+
+    let c= parseFloat(document.getElementById('dlugosc3').value); 
+    let d= parseFloat(document.getElementById('dlugosc4').value); //
+    
+    let e= parseFloat(document.getElementById('dlugosc5').value); 
+    let f= parseFloat(document.getElementById('dlugosc6').value); 
+
+
+    let bok_a;
+
+
+    bok_a=Math.sqrt((c*c-a*a)+(d*d-b*b));
+
+
+
+
+ 
+        document.getElementById("nazwa").innerHTML ="Bok A= "+bok_a.toFixed(2)+" cm" 
+       
+   } 
+
+    
+   function bok_B() 
+   { 
+    let a= parseFloat(document.getElementById('dlugosc1').value); 
+    let b= parseFloat(document.getElementById('dlugosc2').value); //
+
+    let c= parseFloat(document.getElementById('dlugosc3').value); 
+    let d= parseFloat(document.getElementById('dlugosc4').value); //
+
+    let e= parseFloat(document.getElementById('dlugosc5').value); 
+    let f= parseFloat(document.getElementById('dlugosc6').value); 
+
+    let bok_b;
+
+
+
+    bok_b=Math.sqrt((e*e-f*f)+(c*c-d*d));
+
+
+
+
+ 
+
+        document.getElementById("nazwa").innerHTML ="Bok B= "+bok_b.toFixed(2)+" cm" 
+
+   }
+
+   function bok_C() 
+   { 
+    let a= parseFloat(document.getElementById('dlugosc1').value); 
+    let b= parseFloat(document.getElementById('dlugosc2').value); //
+
+    let c= parseFloat(document.getElementById('dlugosc3').value); 
+    let d= parseFloat(document.getElementById('dlugosc4').value); //
+
+    let e= parseFloat(document.getElementById('dlugosc5').value); 
+    let f= parseFloat(document.getElementById('dlugosc6').value); 
+
+    let bok_c;
+
+
+    bok_c=Math.sqrt((e*e-f*f)+(a*a-b*b));
+
+
+
+ 
+   
+        document.getElementById("nazwa").innerHTML ="Bok C= "+bok_c.toFixed(2)+" cm"
+   } 
+
+ </script> 
+
+  <br><br> 
+  Podaj Xa: <input type="text" id="dlugosc1" value="podaj długość"> cm<br><br><br> 
+  Podaj Ya: <input type="text" id="dlugosc2" value="podaj długość"> cm<br><br><br> 
+  Podaj Xb: <input type="text" id="dlugosc3" value="podaj długość"> cm<br><br><br> 
+  Podaj Yb: <input type="text" id="dlugosc4" value="podaj długość"> cm<br><br><br> 
+  Podaj Xc: <input type="text" id="dlugosc5" value="podaj długość"> cm<br><br><br> 
+  Podaj Yc: <input type="text" id="dlugosc6" value="podaj długość"> cm<br><br><br> 
+
+  <input type="button" name="pole" value="Pokaz A: " Onclick="bok_A()"><br><br>
+  <input type="button" name="pole" value="Pokaz B: " Onclick="bok_B()"><br><br> 
+  <input type="button" name="pole" value="Pokaz C: " Onclick="bok_C()"><br><br>
+
+
+
+
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
