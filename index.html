@@ -130,6 +130,14 @@ window.open("zadanie20.html","okienko","toolbar=no,directories=no,menubar=no,hei
  {
 window.open("zadanie20_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
+ function WinOpen28() 
+ {
+window.open("zadanie25.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+ function WinOpen29() 
+ {
+window.open("zadanie25_KOD.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
  </script>
  </head>
 <body>
@@ -139,15 +147,18 @@ window.open("zadanie20_KOD.html","okienko","toolbar=no,directories=no,menubar=no
             font-size: 2 cm ;
             font-weight: bold;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 5px;
 
         }
 
         #main_div{
             background-color: rgb(111, 190, 204);
             width: 300px;
-            height:100%;
+            height:auto;
             border-radius: 20px;
-
+            padding: 5px;
+            margin: 10px;
+            
         }
 
 
@@ -158,6 +169,16 @@ window.open("zadanie20_KOD.html","okienko","toolbar=no,directories=no,menubar=no
             margin: 5px;
             background-color: rgb(73, 141, 135);
             color:rgb(255, 255, 255);
+            height:25px;
+            width:120px;
+            border:2px,black;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        #input_end{
+            margin: 5px;
+            background-color: rgb(111, 190, 204);
+            color: rgb(111, 190, 204);
             height:25px;
             width:120px;
             border:2px,black;
@@ -204,7 +225,9 @@ window.open("zadanie20_KOD.html","okienko","toolbar=no,directories=no,menubar=no
  <input type="button" name="Zadanie 18" value="Zadanie 18" onclick="WinOpen22(' ')">
  <input type="button" name="Zadanie 19" value="Zadanie 19" onclick="WinOpen24(' ')"><br>
  <input type="button" name="Zadanie 20" value="Zadanie 20" onclick="WinOpen26(' ')">
- <input type="button" name="" value="" onclick="(' ')">
+ <input type="button" name="Zadanie 25" value="Zadanie 25" onclick="WinOpen28(' ')"><br>
+ <input id="input_end"type="button" name="" value="" onclick="(' ')"><br>
+
 
 
 
@@ -221,7 +244,10 @@ window.open("zadanie20_KOD.html","okienko","toolbar=no,directories=no,menubar=no
     <input type="button" name="Zadanie 18_KOD" value="Zadanie 18_KOD" onclick="WinOpen23(' ')">
     <input type="button" name="Zadanie 19_KOD" value="Zadanie 19_KOD" onclick="WinOpen25(' ')"><br>
     <input type="button" name="Zadanie 20_KOD" value="Zadanie 20_KOD" onclick="WinOpen27(' ')">
-    <input type="button" name="" value="" onclick="(' ')">
+    <input type="button" name="Zadanie 25_KOD" value="Zadanie 25_KOD" onclick="WinOpen29(' ')"><br>
+    <input id="input_end"type="button" name="" value="" onclick="(' ')"><br>
+   
+   
 </div>
 </center>
 
