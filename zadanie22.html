@@ -1,0 +1,46 @@
+<html>  
+<head>  
+<title> 
+Przykład obliczenia P i O Prostakoątu
+</title> 
+<script language="JavaScript"> 
+function V(r,h) 
+{ 
+r_liczba=parseFloat(r) 
+h_liczba=parseFloat(h) 
+V_wynik=r_liczba*h_liczba;
+document.getElementsByName('obj')[0].value=V_wynik.toFixed(2);   /* na dokument  */ 
+
+
+ } 
+function Pc(r,h) 
+{ 
+    r_liczba=parseFloat(r) 
+    h_liczba=parseFloat(h) 
+   Pc_wynik=2*r_liczba + 2*h_liczba;
+   document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2); 
+  
+} 
+       </script> 
+</head>  
+<body>  
+ Obliczanie a i h prostokątu
+<br> <br> 
+<form name="formularz" action="..." onsubmit="
+V(this.promien.value,this.wysokosc.value); 
+Pc(this.promien.value,this.wysokosc.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="promien"> 
+     Podaj h= 
+        <input  size="6"  name="wysokosc"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Pole= 
+           <input  size="6"  name="obj"> 
+       Obwód= 
+          <input  size="6"  name="pole"> 
+</form> 
+
+</body>  
+</html>

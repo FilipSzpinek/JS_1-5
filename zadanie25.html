@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Zadanie 25</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:rgb(0, 0, 0);font-size:20px;">
+    
+ <script language="JavaScript">
+let liczba1=prompt("Podaj N0 (ilość sztuk)","");
+let liczba2=prompt("Podaj T1/2 (czas rozpadu)","");
+let liczba3=prompt("Podaj T (czas)","");
+
+
+
+ let no=parseFloat(liczba1);
+ let cz_r=parseFloat(liczba2);
+ let czas=parseFloat(liczba3);
+ let lambda = Math.log(2)/cz_r
+ let n = no *  Math.pow(2.71, -lambda*czas)
+
+
+ document.write("N0="+no+"<br>");
+ document.write("T1/2="+cz_r+"<br>");
+ document.write("T="+czas+"<br>");
+ document.write("Lambda="+lambda+"<br>");
+ document.write("N="+n+"<br>");
+
+
+
+
+
+
+ </script>
+</div>
+</body>
+</html>

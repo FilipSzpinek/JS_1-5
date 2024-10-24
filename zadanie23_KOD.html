@@ -1,0 +1,61 @@
+<html>
+<body>
+<h1>KOD DO ZAD 23</h1>
+<textarea>
+    <html>  
+        <head>  
+        <title> 
+            Obliczanie C i Alfy trójkąta prostokątnego
+        </title> 
+        
+        
+        <script language="JavaScript"> 
+        function C(a,b) 
+        { 
+        a_liczba=parseFloat(a) 
+        b_liczba=parseFloat(b) 
+        c_wynik=Math.sqrt(a_liczba*a_liczba + b_liczba*b_liczba);
+        document.getElementsByName('ce')[0].value=c_wynik.toFixed(2);   /* na dokument  */ 
+         } 
+        
+        function Alfa(a,b) 
+        { 
+            a_liczba=parseFloat(a) 
+            b_liczba=parseFloat(b) 
+           Pc_wynik=Math.atan(a_liczba/b_liczba) * (180/Math.PI);
+           document.getElementsByName('alf')[0].value=Pc_wynik.toFixed(2); 
+          
+        } 
+               </script> 
+        
+        
+        </head>  
+        <body>  
+         Obliczanie C i Alfy trójkąta prostokątnego
+        <br> <br> 
+        
+        
+        <form name="formularz" action="..." onsubmit="
+        C(this.a.value,this.b.value); 
+        Alfa(this.a.value,this.b.value);return false">   
+        
+             Podaj a= 
+                <input  size="6"  name="a"> 
+             Podaj b= 
+                <input  size="6"  name="b"> 
+                               <br>   <br> 
+                 <input  TYPE="submit"  Value="oblicz" > 
+                               <br>   <br> 
+        
+               C= 
+                   <input  size="6"  name="ce"> 
+               Alfa= 
+                  <input  size="6"  name="alf"> 
+        
+        </form> 
+        
+        </body>  
+        </html>
+</textarea>
+</body>
+</html>

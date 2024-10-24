@@ -1,0 +1,49 @@
+<html>
+<body>
+<h1>KOD ZAD 26</h1>
+    <textarea>
+        <!DOCTYPE html> 
+        <head> 
+        <title> Zadanie 26</title> 
+        <meta charset="utf-8"> 
+        </head> 
+       <body>
+       <div style="color:rgb(0, 0, 0);font-size:20px;">
+           
+        <script language="JavaScript">
+       let liczba1=prompt("Podaj 1 podstawe","");
+       let liczba2=prompt("Podaj 2 podstawe","");
+       let liczba3=prompt("Podaj Wysokość","");
+       
+       
+       
+        let a=parseFloat(liczba1);
+        let b=parseFloat(liczba2);
+        let h=parseFloat(liczba3);
+       
+        let pole = ( (a + b) * h) / 2;
+        let ramie1 = (a-b)/2;
+        let ramie = Math.sqrt((h*h) + (ramie1*ramie1));
+       
+        let obwod = ramie * 2 + a + b;
+       
+       
+       
+        document.write("a="+a+"<br>");
+        document.write("b="+b+"<br>");
+        document.write("h="+h+"<br>");
+        document.write("Pole="+pole+"<br>");
+        document.write("Obwód="+obwod+"<br>");
+       
+       
+       
+       
+       
+        </script>
+       </div>
+       </body>
+       </html>
+       
+    </textarea>
+</body>
+</html>
